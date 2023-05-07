@@ -19,7 +19,8 @@ if not os.path.exists(folder_path):
     text.write('ご利用ありがとうございます。\
         \nStartフォルダを作成しましたので、\
         \n起動したいファイル、ショートカット等を格納し、\
-        \n再度、Start.exeを実行してください。')text.close()
+        \n再度、Start.exeを実行してください。')
+    text.close()
     #作成したフォルダを開く
     subprocess.Popen(['explorer', abs_folder_path], shell=True)
     #起動待ち
