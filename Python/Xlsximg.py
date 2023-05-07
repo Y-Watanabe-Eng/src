@@ -14,9 +14,6 @@ if len(sys.argv) != 2:
     tkinter.Tk().withdraw()
     tkinter.messagebox.showwarning(title='エラー', message='単一のファイルで実行してください。')
 
-    #デバッグ用
-    print(len(sys.argv))
-
 else:
     #ドラッグしたブックのパスを取得
     filepath = sys.argv[1]
