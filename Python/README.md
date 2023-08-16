@@ -20,4 +20,4 @@ exeファイルに変換してクリック、ドラッグで使えるように�
   
 ### [MiniMemo](https://yw-app.net)  
   
-### [GitHubリポジトリ](URL)
+### [GitHubリポジトリ](https://github.com/Y-Watanabe-Eng/minimemo)
