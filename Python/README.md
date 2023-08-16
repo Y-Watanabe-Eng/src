@@ -18,5 +18,6 @@ exeファイルに変換してクリック、ドラッグで使えるように�
   
 ## Webアプリの作成も行っています。  
   
-[MiniMemo](https://yw-app.net)  
-[GitHubリポジトリ](URL)
+### [MiniMemo](https://yw-app.net)  
+  
+### [GitHubリポジトリ](URL)
