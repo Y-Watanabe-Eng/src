@@ -17,13 +17,13 @@
 - SpotifyAPIを用いて、2019-2023年における6/9(Rockの日)の再生回数Top200を取得
 - 抽出データの再生回数遷移、楽曲データから見た特徴の遷移を分析  
   
-1. music_dataset.py  
+1.music_dataset.py  
 - 基となるCSVを出力します  
   
-2. music_analysis.py  
+2.music_analysis.py  
 - データセットから再生回数の集計、楽曲データの平均値を分析します  
   
-3. music_plot.ipynb  
+3.music_plot.ipynb  
 - グラフを描画します
   
 ## データ取得定期実行  
