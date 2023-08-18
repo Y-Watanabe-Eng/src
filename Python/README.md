@@ -38,4 +38,4 @@ exeファイルに変換してクリック、ドラッグで使えるように�
   
 ### [MiniMemo](https://yw-app.net)  
   
-### [GitHubリポジトリ](https://github.com/Y-Watanabe-Eng/minimemo)
+- [GitHubリポジトリ](https://github.com/Y-Watanabe-Eng/minimemo)
