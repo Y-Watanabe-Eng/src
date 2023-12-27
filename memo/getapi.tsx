@@ -5,23 +5,22 @@ interface Props {
 }
 
 
-export default function Youtube() {
+export default function getYoutube() {
 
-  async function feed() {
+  const apiKey = process.env.YOUTUBE_API_KEY
+  const channelID = 'UCUBvFfyuBrATTPxnAZ4OsCQ'
+
+  async function getChannel() {
     'use server'
 
-    const apiKey = process.env.YOUTUBE_API_KEY
-    const channelID = 'UCUBvFfyuBrATTPxnAZ4OsCQ'
-
     const channelRes = await fetch(
-
       'https://www.googleapis.com/youtube/v3/channels?part=' +
         'snippet' +
         '&id=' +
         channelID + 
         '&key=' +
         apiKey
-    )
+    )}
 
     const channelData = await channelRes.json()
 
