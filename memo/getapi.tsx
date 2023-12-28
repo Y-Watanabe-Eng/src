@@ -1,12 +1,10 @@
-"use server"
-
-export default async function getYoutube() {
+async function getYoutube() {
 
   const apiKey = process.env.YOUTUBE_API_KEY
   const channelID = "UCUBvFfyuBrATTPxnAZ4OsCQ"
-  const playlistID = ""
 
-  async function getChannels() {
+  async function getChannel() {
+//    'use server'
 
     const channelRes = await fetch(
       "https://www.googleapis.com/youtube/v3/channels?part=" +
@@ -15,17 +13,18 @@ export default async function getYoutube() {
         channelID + 
         "&key=" +
         apiKey
-    )}
-
-
+      )
+      
     const channelData = await channelRes.json()
 
-    console.log(channelData)
+    return channelData;
 
   }
 
-  async getChannels()
-  async getPlaylist()
-  async getVideos()
+  const channelData = await getChannel()
+
+  console.log(channelData)
 
 }
+
+getYoutube()
