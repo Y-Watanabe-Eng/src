@@ -6,7 +6,7 @@ export default async function getYoutube() {
   const channelID = "UCUBvFfyuBrATTPxnAZ4OsCQ"
   const playlistID = ""
 
-  async function getChannel() {
+  async function getChannels() {
 
     const channelRes = await fetch(
       "https://www.googleapis.com/youtube/v3/channels?part=" +
@@ -24,6 +24,8 @@ export default async function getYoutube() {
 
   }
 
-  async getChannel()
+  async getChannels()
+  async getPlaylist()
+  async getVideos()
 
 }
