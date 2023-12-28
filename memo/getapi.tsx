@@ -1,10 +1,3 @@
-import { NextPage } from 'next'
-
-interface Props {
-
-}
-
-
 export default function getYoutube() {
 
   const apiKey = process.env.YOUTUBE_API_KEY
@@ -23,8 +16,13 @@ export default function getYoutube() {
         apiKey
     )}
 
+
     const channelData = await channelRes.json()
 
     console.log(channelData)
+
+  }
+
+  getChannel()
 
 }
